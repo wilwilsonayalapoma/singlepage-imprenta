@@ -1,0 +1,102 @@
+✅ PALETA DE COLORES ACTUALIZADA
+
+═════════════════════════════════════════════════════════════════
+
+🎨 NUEVA PALETA DE COLORES:
+
+Color 1: #1c1e1c - Gris oscuro/Negro
+Color 2: #25504a - Verde oscuro
+Color 3: #ff5957 - Rojo/Coral (Acentos principales)
+Color 4: #ffd05d - Amarillo/Oro (Hover)
+Color 5: #ffffca - Amarillo muy claro (Fondo terciario)
+
+═════════════════════════════════════════════════════════════════
+
+📋 CAMBIOS REALIZADOS:
+
+1. ✨ VARIABLES CSS ACTUALIZADAS EN :root
+   - --color1: #1c1e1c (para textos oscuros)
+   - --color2: #25504a (para textos secundarios)
+   - --color3: #ff5957 (para acentos)
+   - --color4: #ffd05d (para hover)
+   - --color5: #ffffca (para fondos claros)
+   - --text-primary: #1c1e1c
+   - --text-secondary: #25504a
+   - --accent-color: #ff5957 (Rojo Coral)
+   - --accent-hover: #ffd05d (Amarillo Oro)
+   - --bg-tertiary: #ffffca
+
+2. 🌙 TEMA OSCURO ACTUALIZADO
+   - --text-primary: #ffffca (Amarillo claro)
+   - --text-secondary: #ffd05d (Amarillo oro)
+   - --accent-color: #ff5957 (Rojo coral)
+   - --accent-hover: #ffd05d (Amarillo oro)
+   - Shadow color con rojo: rgba(255, 89, 87, 0.2)
+
+3. 🎯 TODOS LOS ELEMENTOS CON COLOR ACTUALIZADO
+   - Logo SVG: Rojo Coral en ambos temas
+   - Botón tema: Borde y sombra en Rojo Coral
+   - Menú hover: Fondo Amarillo, sombra en Rojo
+   - Carrusel: Indicadores en Rojo Coral
+   - Tarjetas: Bordes y sombras adaptadas
+   - Contacto: Iconos en Rojo Coral
+   - Clientes: Accento en Rojo Coral
+
+4. 📱 RESPONSIVE CON NUEVOS COLORES
+   - Móvil: Menú con nuevo esquema
+   - Hover: Amarillo oro con fondo rojo suave
+   - Tema oscuro: Totalmente sincronizado
+
+═════════════════════════════════════════════════════════════════
+
+🌈 ESQUEMA DE COLORES:
+
+MODO CLARO:
+├─ Fondo: #ffffff
+├─ Texto principal: #1c1e1c (Gris oscuro)
+├─ Texto secundario: #25504a (Verde oscuro)
+├─ Acentos: #ff5957 (Rojo Coral)
+├─ Hover: #ffd05d (Amarillo Oro)
+└─ Fondo terciario: #ffffca (Amarillo claro)
+
+MODO OSCURO:
+├─ Fondo: #0a0a0a
+├─ Texto principal: #ffffca (Amarillo claro)
+├─ Texto secundario: #ffd05d (Amarillo oro)
+├─ Acentos: #ff5957 (Rojo Coral)
+├─ Hover: #ffd05d (Amarillo Oro)
+└─ Fondos: #1a1a1a / #2a2a2a
+
+═════════════════════════════════════════════════════════════════
+
+📁 ARCHIVOS MODIFICADOS:
+
+1. src/styles/theme.css
+   - Variables CSS en :root
+   - Variables en [data-theme="dark"]
+   - Todos los colores hardcodeados
+   - Gradientes actualizados
+   - Sombras con nuevo color
+
+2. src/styles/ThemeToggle.css
+   - Botón con nuevos colores
+   - Hover con nuevas sombras
+
+3. src/index.css
+   - Hover del menú con nuevos rgba
+   - Sombras actualizadas
+
+═════════════════════════════════════════════════════════════════
+
+✨ CARACTERÍSTICAS:
+
+✅ Rojo Coral (#ff5957) como color principal dinámico
+✅ Amarillo Oro (#ffd05d) para estados hover
+✅ Amarillo claro (#ffffca) para fondos complementarios
+✅ Verde oscuro (#25504a) para texto secundario
+✅ Gris oscuro (#1c1e1c) para texto principal en claro
+✅ Totalmente funcional en modo oscuro y claro
+✅ Responsive en todos los dispositivos
+✅ Transiciones suaves sincronizadas
+
+═════════════════════════════════════════════════════════════════

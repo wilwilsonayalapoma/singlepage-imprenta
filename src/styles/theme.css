@@ -1,0 +1,391 @@
+/* Estilos de Tema Oscuro/Claro */
+
+/* Paleta de colores proporcionada */
+:root {
+  --color1: #1c1e1c;      /* Gris oscuro/Negro */
+  --color2: #25504a;      /* Verde oscuro */
+  --color3: #ff5957;      /* Rojo/Coral */
+  --color4: #ffd05d;      /* Amarillo/Oro */
+  --color5: #ffffca;      /* Amarillo muy claro */
+  
+  /* Colores complementarios adicionales */
+  --color-accent: #25d366;  /* Verde WhatsApp */
+  --color-secondary: #1f6feb; /* Azul marca */
+  
+  /* Variables de tema claro (por defecto) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --bg-tertiary: #ffffca;
+  --text-primary: #1c1e1c;
+  --text-secondary: #25504a;
+  --text-muted: #666;
+  --border-color: #eee;
+  --header-bg: #ffffff;
+  --accent-color: #ff5957;
+  --accent-hover: #ffd05d;
+  --shadow-color: rgba(255, 89, 87, 0.08);
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+  --text-primary: #ffffca;
+  --text-secondary: #ffd05d;
+  --text-muted: #888;
+  --border-color: #333;
+  --header-bg: #0f0f0f;
+  --accent-color: #ff5957;
+  --accent-hover: #ffd05d;
+  --shadow-color: rgba(255, 89, 87, 0.2);
+}
+
+/* Transición suave de tema */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+}
+
+/* Excepciones para transiciones (no animar iconos SVG del theme toggle) */
+.icon-moon,
+.icon-sun {
+  transition: none;
+}
+
+svg, img {
+  transition: none;
+}
+
+/* Aplicar estilos usando variables */
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.site-header {
+  background-color: var(--header-bg);
+  border-bottom-color: var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Logo SVG dinámico */
+.logo svg,
+.logo-svg {
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+.logo-rect {
+  fill: #ff5957;
+  transition: fill 0.3s ease;
+}
+
+.logo-text {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+
+/* Logo en tema oscuro */
+[data-theme="dark"] .logo-svg {
+  filter: brightness(1.15);
+}
+
+[data-theme="dark"] .logo-rect {
+  fill: #ff5957;
+}
+
+[data-theme="dark"] .logo-text {
+  fill: #0a0a0a;
+}
+
+.main-nav {
+  background-color: var(--header-bg);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.main-nav a {
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+
+.main-nav a:hover {
+  color: var(--accent-hover);
+  background-color: rgba(255, 89, 87, 0.08);
+  border-bottom-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 89, 87, 0.15);
+}
+
+.hero {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 89, 87, 0.08),
+    rgba(255, 208, 93, 0.05)
+  );
+  color: var(--text-primary);
+}
+
+.section {
+  color: var(--text-primary);
+}
+
+.section h2 {
+  color: var(--accent-color);
+}
+
+.section p,
+.contact-intro,
+.footer-info p,
+.footer-copy {
+  color: var(--text-secondary);
+}
+
+.contact-card {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.contact-icon {
+  background-color: rgba(255, 89, 87, 0.12);
+  color: var(--accent-color);
+}
+
+.map-embed {
+  border-color: var(--border-color);
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.carousel {
+  border-color: var(--border-color);
+}
+
+.dot {
+  background-color: var(--text-muted);
+}
+
+.dot.active {
+  background-color: var(--accent-color);
+}
+
+.site-footer {
+  background-color: var(--bg-secondary);
+  border-top-color: var(--border-color);
+}
+
+/* Estilos mejorados para el modo oscuro */
+[data-theme="dark"] .main-nav {
+  background-color: var(--header-bg);
+  border-top-color: var(--border-color);
+}
+
+/* Estilos del menú en modo oscuro */
+[data-theme="dark"] .main-nav a {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .main-nav a:hover {
+  color: var(--accent-hover);
+  background-color: rgba(255, 208, 93, 0.1);
+  border-bottom-color: var(--accent-hover);
+  box-shadow: 0 4px 12px rgba(255, 208, 93, 0.2);
+}
+
+[data-theme="dark"] .nav-toggle .hamburger,
+[data-theme="dark"] .nav-toggle .hamburger::before,
+[data-theme="dark"] .nav-toggle .hamburger::after {
+  background-color: var(--text-primary);
+}
+
+/* Scroll personalizado en tema oscuro */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 12px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 6px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Inputs y formularios */
+input,
+textarea,
+select {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(126, 232, 127, 0.1);
+}
+
+/* Código y pre-formateado */
+code,
+pre {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* Enlaces */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Botones personalizados */
+button:not(.btn-whatsapp):not(.theme-toggle) {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+button:not(.btn-whatsapp):not(.theme-toggle):hover {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+/* Estilos para el modo oscuro en secciones */
+[data-theme="dark"] .section {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .clients-list {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .clients-list li {
+  color: var(--text-secondary);
+  background-color: rgba(255, 89, 87, 0.08);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+/* Botón WhatsApp en ambos temas */
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25d366, #20ba5a);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #20ba5a, #1aa851);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+[data-theme="dark"] .btn-whatsapp {
+  background: linear-gradient(135deg, #25d366, #20ba5a);
+}
+
+[data-theme="dark"] .btn-whatsapp:hover {
+  background: linear-gradient(135deg, #20ba5a, #1aa851);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* WhatsApp flotante en ambos temas */
+.whatsapp-float {
+  background: linear-gradient(135deg, #25d366, #20ba5a);
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-float:hover {
+  box-shadow: 0 18px 36px rgba(37, 211, 102, 0.4);
+}
+
+[data-theme="dark"] .whatsapp-float {
+  background: linear-gradient(135deg, #25d366, #20ba5a);
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.4);
+}
+
+[data-theme="dark"] .whatsapp-float:hover {
+  box-shadow: 0 18px 36px rgba(37, 211, 102, 0.5);
+}
+
+/* Responsive - Menú móvil en ambos temas */
+@media (max-width: 800px) {
+  .main-nav {
+    background-color: var(--header-bg);
+    border-top-color: var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .main-nav a {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+    transition: all 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    background-color: rgba(255, 208, 93, 0.08);
+  }
+
+  /* En móviles, asegurar que el fondo sea correcto en tema oscuro */
+  [data-theme="dark"] .main-nav {
+    background-color: var(--header-bg);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  [data-theme="dark"] .main-nav a {
+    border-bottom-color: var(--border-color);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+  }
+
+  [data-theme="dark"] .main-nav a:hover {
+    background-color: rgba(255, 208, 93, 0.1);
+    color: var(--accent-hover);
+  }
+
+  /* Asegurar visibilidad en contacto en móvil */
+  .contact-grid {
+    margin-top: 18px;
+  }
+
+  .contact-card {
+    background-color: var(--bg-secondary);
+  }
+
+  .carousel {
+    background-color: var(--bg-secondary);
+  }
+
+  .carousel-controls {
+    background-color: var(--bg-secondary);
+  }
+
+  /* Footer en móvil */
+  .site-footer {
+    background-color: var(--bg-secondary);
+  }
+
+  [data-theme="dark"] .site-footer {
+    background-color: var(--bg-secondary);
+  }
+}

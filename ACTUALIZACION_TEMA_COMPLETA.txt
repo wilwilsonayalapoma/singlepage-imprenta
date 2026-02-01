@@ -1,0 +1,121 @@
+✅ ACTUALIZACIÓN COMPLETA - TEMA OSCURO/CLARO EN TODA LA PÁGINA
+
+═════════════════════════════════════════════════════════════════
+
+📋 CAMBIOS REALIZADOS:
+
+1. ✨ CONVERSIÓN DE COLORES HARDCODEADOS A VARIABLES CSS
+   - Body: ahora usa var(--text-primary) y var(--bg-primary)
+   - Header: usa var(--header-bg) y var(--border-color)
+   - Navegación: todos los elementos con variables
+   - Secciones: completo soporte de tema
+
+2. 🎨 APLICACIÓN DE PALETA DE COLORES EN TODOS LOS ELEMENTOS
+   - Botones: bordes y texto dinámicos
+   - Tarjetas de contacto: fondo y borde variables
+   - Carrusel: controles y indicadores ajustables
+   - Pie de página: completamente temático
+
+3. 📱 SOPORTE COMPLETO PARA MODO MÓVIL
+   - Menú móvil con tema oscuro/claro
+   - Botón hamburguesa se adapta al tema
+   - Todos los elementos responsive
+   - Tamaños reducidos para pantallas pequeñas (480px)
+
+4. 🌍 ELEMENTOS CON SOPORTE DE TEMA OSCURO/CLARO:
+   
+   ✓ Header y navegación
+   ✓ Menú desplegable (móvil)
+   ✓ Secciones de contenido (hero, productos, contacto)
+   ✓ Tarjetas de contacto
+   ✓ Formularios e inputs
+   ✓ Carrusel de productos
+   ✓ Botón WhatsApp (flotante y en hero)
+   ✓ Pie de página
+   ✓ Botón de cambio de tema
+   ✓ Enlaces y texto
+
+5. 🎯 COLORES UTILIZADOS EN AMBOS TEMAS:
+
+   MODO CLARO:
+   - Fondo: #ffffff (blanco puro)
+   - Texto principal: #131607 (marrón oscuro)
+   - Texto secundario: #7e7971 (gris marrón)
+   - Acentos: #7ee87f (verde) y #eae55b (amarillo)
+   - Bordes: #eee (gris muy claro)
+
+   MODO OSCURO:
+   - Fondo: #0a0a0a (negro casi puro)
+   - Texto principal: #f3eae8 (beige/crema)
+   - Texto secundario: #b8b3aa (gris beige)
+   - Acentos: #7ee87f (verde) y #eae55b (amarillo)
+   - Bordes: #333 (gris oscuro)
+
+6. ⚙️ TRANSICIONES SUAVES:
+   - Cambio de tema en 0.3s
+   - Efectos hover en 0.3s
+   - Animaciones fluidas
+
+7. 🔄 FUNCIONALIDAD COMPLETA:
+   - Click en icono luna/sol para cambiar tema
+   - Preferencia guardada en localStorage
+   - Se recupera al recargar la página
+   - Funcionable en todos los navegadores
+
+═════════════════════════════════════════════════════════════════
+
+📁 ARCHIVOS MODIFICADOS:
+
+1. src/index.css
+   - Convertidos colores hardcodeados a variables
+   - Actualizado hamburguesa y navegación
+   - Estilos móvil con tema
+
+2. src/styles/theme.css
+   - Expandido con nuevos estilos responsive
+   - Añadidos estilos para modo oscuro en móvil
+   - WhatsApp con tema dinámico
+
+3. src/styles/ThemeToggle.css
+   - Botón con variables CSS
+   - Responsive mejorado hasta 480px
+   - Sombras dinámicas
+
+═════════════════════════════════════════════════════════════════
+
+🚀 CÓMO USAR:
+
+1. CAMBIAR TEMA:
+   - Click en el botón luna/sol en la esquina superior derecha
+   - Se aplicará automáticamente a toda la página
+   - Se guardará tu preferencia
+
+2. EN MÓVIL:
+   - El botón se reduce proporcionalmente
+   - El menú mantiene el tema
+   - Todos los elementos son responsive
+
+3. PERSONALIZAR COLORES:
+   Edita src/styles/theme.css en la sección :root
+   
+   :root {
+     --color1: #7ee87f;      /* Verde */
+     --color2: #eae55b;      /* Amarillo */
+     --color3: #131607;      /* Marrón oscuro */
+     --color4: #7e7971;      /* Gris marrón */
+     --color5: #f3eae8;      /* Beige/Crema */
+   }
+
+═════════════════════════════════════════════════════════════════
+
+✨ EXPERIENCIA DE USUARIO:
+
+✅ Transiciones suaves al cambiar tema
+✅ Toda la página responde al cambio
+✅ Colores coherentes en toda la interfaz
+✅ Perfectamente funcional en móviles
+✅ Preferencia persistente
+✅ Accesibilidad mejorada
+✅ Sombras y efectos dinámicos
+
+═════════════════════════════════════════════════════════════════

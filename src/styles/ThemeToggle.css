@@ -1,0 +1,93 @@
+/* Estilos para el botón de cambio de tema */
+
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--accent-color);
+  padding: 0;
+  margin: 0 15px;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 89, 87, 0.1);
+  transform: scale(1.1);
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
+  box-shadow: 0 4px 12px rgba(255, 89, 87, 0.15);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.icon-moon,
+.icon-sun {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Animación de rotación para los iconos */
+.icon-moon {
+  animation: rotateIn 0.5s ease-in-out;
+}
+
+.icon-sun {
+  animation: rotateIn 0.5s ease-in-out;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-width: 2px;
+  }
+
+  .icon-moon,
+  .icon-sun {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-toggle:hover {
+    background-color: rgba(126, 232, 127, 0.12);
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .icon-moon,
+  .icon-sun {
+    width: 18px;
+    height: 18px;
+  }
+}

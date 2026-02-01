@@ -1,0 +1,86 @@
+/* ESTILOS MEJORADOS DEL MENÚ - REFERENCIA VISUAL */
+
+/* ========== COLORES UTILIZADOS ==========
+
+Verde Claro:     #7ee87f (color1) - Acentos principales
+Amarillo:        #eae55b (color2) - Hover principal  
+Marrón Oscuro:   #131607 (color3) - Texto oscuro
+Gris Marrón:     #7e7971 (color4) - Texto secundario
+Beige/Crema:     #f3eae8 (color5) - Fondo claro
+
+========================================= */
+
+/* MENÚ EN MODO CLARO - Versión de Escritorio */
+
+.main-nav a {
+  /* Estado Normal */
+  color: #131607 (Texto oscuro)
+  padding: 12px 16px
+  border-radius: 8px
+  font-weight: 500
+  border-bottom: 2px solid transparent
+  
+  /* Transiciones suaves */
+  transition: all 0.3s ease
+}
+
+.main-nav a:hover {
+  /* Al pasar el mouse */
+  color: #eae55b (Amarillo - highlight)
+  background-color: rgba(126, 232, 127, 0.08) (Verde muy suave)
+  border-bottom-color: #eae55b (Línea amarilla abajo)
+  transform: translateY(-2px) (Sube un poco el texto)
+  box-shadow: 0 4px 12px rgba(126, 232, 127, 0.15) (Sombra verde suave)
+}
+
+/* MENÚ EN MODO OSCURO */
+
+[data-theme="dark"] .main-nav a:hover {
+  color: #eae55b (Amarillo - highlight)
+  background-color: rgba(234, 229, 91, 0.1) (Amarillo muy suave)
+  border-bottom-color: #eae55b (Línea amarilla abajo)
+  box-shadow: 0 4px 12px rgba(234, 229, 91, 0.2) (Sombra amarilla)
+}
+
+/* MENÚ EN MÓVILES - Versión Responsiva */
+
+.main-nav a (Móvil) {
+  width: 100%
+  padding: 16px 20px
+  border-bottom: 1px solid (borde entre items)
+  border-right: 3px solid transparent (línea derecha invisible)
+  border-radius: 0 (sin esquinas redondeadas)
+  margin: 0
+}
+
+.main-nav a:hover (Móvil) {
+  border-right-color: #eae55b (Línea DERECHA amarilla)
+  background-color: rgba(234, 229, 91, 0.08)
+  transform: translateX(8px) (Se desplaza hacia la DERECHA)
+}
+
+/* ========= EFECTOS VISUALES ==========
+
+✨ Al pasar el mouse en la opción del menú:
+  
+  1. El texto cambia a AMARILLO (#eae55b)
+  2. Aparece un fondo VERDE muy suave
+  3. Una línea AMARILLA aparece abajo del texto
+  4. El texto sube ligeramente (efecto de elevación)
+  5. Una sombra verde suave lo envuelve
+
+📱 En móviles:
+  
+  1. El menú se expande verticalmente
+  2. Al pasar el mouse, la línea amarilla aparece en el LADO DERECHO
+  3. El texto se desplaza hacia la DERECHA
+  4. Mismo cambio de color: texto AMARILLO
+
+🌙 En modo oscuro:
+  
+  1. El fondo sigue siendo VERDE suave
+  2. El texto de hover sigue siendo AMARILLO
+  3. La sombra es más pronunciada con amarillo
+  4. Todos los cambios mantienen coherencia
+
+========================================= */
