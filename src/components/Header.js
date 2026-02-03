@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -9,7 +10,8 @@ export default function Header() {
         <div className="logo">
           <svg
             width="42"
-            height="42"
+            hegit
+            ight="42"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +52,8 @@ export default function Header() {
             Contacto
           </a>
         </nav>
+
+        <ThemeToggle />
 
         <button
           className="nav-toggle"
