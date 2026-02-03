@@ -40,11 +40,26 @@ export default function App() {
           <div className="container">
             <h2>Clientes</h2>
             <p>Algunas empresas que confían en nosotros.</p>
-            <ul className="clients-list">
-              <li>Empresa A</li>
-              <li>Empresa B</li>
-              <li>Empresa C</li>
-            </ul>
+            <div className="clients-grid">
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/coca-cola.com" alt="Coca-Cola" />
+              </div>
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/adidas.com" alt="Adidas" />
+              </div>
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/samsung.com" alt="Samsung" />
+              </div>
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" />
+              </div>
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/nike.com" alt="Nike" />
+              </div>
+              <div className="client-logo">
+                <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" />
+              </div>
+            </div>
           </div>
         </section>
 
