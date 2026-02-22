@@ -1,13 +1,13 @@
 {
   "name": "imprenta-nuevo-mundo",
-  "homepage": "https://github.com/wilwilsonayalapoma/singlepage-imprenta",
+  "homepage": "https://wilwilsonayalapoma.github.io/singlepage-imprenta",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode development --open",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "vite build"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "react": "^18.2.0",
