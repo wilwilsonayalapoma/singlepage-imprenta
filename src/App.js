@@ -14,7 +14,7 @@ export default function App() {
             <h1>Imprenta Nuevo Mundo</h1>
             <p>Soluciones de impresión profesionales — calidad y rapidez.</p>
             <a
-              href="https://wa.me/51999888777?text=Hola%20Imprenta%20Nuevo%20Mundo%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+              href="https://wa.me/59173241949?text=Hola%20Imprenta%20Nuevo%20Mundo%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp"
